@@ -1,0 +1,61 @@
+.result_card {
+  display: flex;
+  max-width: 600px;
+  margin: 10px auto;
+  padding: 10px;
+  border: 2px solid lightgrey;
+  justify-content: space-between;
+  position: relative;
+  transition: 0.33s;
+  &:hover{
+    transform: scale(1.05);
+    transition: 0.33s;
+    background-color: #779cb0;
+  }
+
+  .result_card_img {
+    border-radius: 10px;
+    width: 120px;
+    overflow: hidden;
+    margin-right: 10px;
+    img {
+      display: block;
+      width: 100%;
+    }
+
+  }
+
+  .result_card_content {
+    flex-wrap: wrap;
+    width: 65%;
+    font-family: 'Russo One', sans-serif;
+
+
+    h3 {
+      width: 100%;
+
+    }
+
+    .result_card_content_release {
+      width: 100%;
+    }
+
+    .result_card_content__overview {
+      position: relative;
+      padding: 10px 10px 10px 0;
+      max-width: 400px;
+      width: 100%;
+
+      p {
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        font-size: 12px;
+      }
+
+    }
+
+  }
+}

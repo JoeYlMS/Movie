@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Russo+One&display=swap');
+@mixin for-phone-only {
+  @media (max-width: 599px) { @content; }
+}
+@mixin for-tablet-only {
+  @media (max-width: 899px) { @content; }
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background-color: #94b8cc;
+}
+.container{
+  max-width: 1160px;
+  padding: 0 20px;
+  margin: auto;
+}
+.d-flex{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.mr-10{
+  margin-right: 10px;
+}
+.link{
+  color: white;
+  text-decoration: none;
+}
+.text-center{
+  text-align: center;
+}

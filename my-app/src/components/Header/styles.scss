@@ -1,0 +1,13 @@
+@import "../../routes/styles";
+header {
+  padding: 25px 0;
+  background-color: #032541;
+  .container {
+  @include for-phone-only{
+    justify-content: center;
+  }
+    flex-wrap: wrap;
+    align-items: center;
+
+  }
+}

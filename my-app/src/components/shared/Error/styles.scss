@@ -1,0 +1,41 @@
+@import "../../../routes/styles";
+.error_message{
+  min-height: calc(50vh);
+  font-family: 'Permanent Marker', cursive;
+  display: flex;
+  justify-content: start;
+  flex-direction: column;
+  align-items: center;
+  h1{
+    font-size: 70px;
+    @include for-phone-only{
+      font-size: 36px;
+    }
+  }
+  p{
+    text-align: center;
+    font-size: 36px;
+    margin: 15px 0;
+    &:last-child{
+      @include for-phone-only{
+        font-size: 26px;
+      }
+      font-size: 56px;
+      margin-bottom: 40px;
+    }
+  }
+  a{
+    text-decoration: underline;
+    color: black;
+    font-size: 56px;
+    transition: 0.24s;
+    @include for-phone-only{
+      font-size: 36px;
+    }
+    &:hover{
+      color: #113d83;
+      transform: scale(1.15);
+      text-decoration: none;
+    }
+  }
+}

@@ -1,0 +1,46 @@
+@import "../../../routes/styles";
+
+.not_valid {
+  background-color: #c08b8b;
+}
+
+.hero_search {
+  width: 100%;
+  max-width: 600px;
+  margin: auto;
+  form {
+    @include for-phone-only{
+      width: 90%;
+      margin: auto;
+      font-size: 10px;
+    }
+    display: flex;
+    width: 100%;
+    font-size: 16px;
+    input {
+      width: 80%;
+
+      text-align: center;
+      border-radius: 15px 0 0 15px;
+      padding: 5px;
+      border: none;
+      outline:none;
+    }
+
+    button {
+      width: 19%;
+      min-width: 70px;
+      background: linear-gradient(90deg, rgba(29, 211, 170, 1) 0%, rgba(4, 182, 221, 1) 78%);
+      border-radius: 0 30px 30px 0;
+      border: none;
+
+      &:hover {
+        color: #113d83;
+        background: linear-gradient(90deg, rgba(4, 182, 221, 1) 0%, rgba(29, 211, 170, 1) 100%);
+      }
+
+    }
+  }
+
+
+}
